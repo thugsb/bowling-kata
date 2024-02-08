@@ -22,7 +22,7 @@ export function calcBowlingScore(score: Array<string | number>): number {
     } else if (bowl === "X") {
       // Handle strikes
       if (i < score.length - 2) {
-        // Strikes in the last 2 bowls are calcuated differently
+        // A strike on the final bowl is handled differently
         total += 10;
         if (nextBowl === "X" && followingBowl === "X") {
           total += 20;
